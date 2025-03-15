@@ -2,7 +2,7 @@
 FROM nginx:alpine
 
 # Copy custom Nginx config (optional)
-# COPY nginx.conf /etc/nginx/nginx.conf
+COPY . /usr/share/nginx/html
 
 # Expose the default HTTP port
 EXPOSE 80
